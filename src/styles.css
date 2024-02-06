@@ -1,15 +1,85 @@
 :root {
     --primary-dark: #03001c;
+    --primary-light: #FAEED1;
+    --secondary-light: #fff6f6;
 }
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--primary-dark);
 }
 section {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px;
 }
+section.secondary {
+    background: var(--primary-light)
+}
+section.secondary h2 {
+    color: var(--primary-dark);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+section.secondary h3 {
+    color: var(--primary-dark);
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+section.secondary h4 {
+    color: var(--primary-dark);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+section.secondary p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: var(--primary-dark);
+    opacity: 0.8;
+    line-height: 1;
+}
+.card {
+    background-color: var(--secondary-light);
+}
+
+.card.header {
+    margin-top: 5px;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.card.body {
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.button {
+    display: block;
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: all 150ms ease-in-out;
+}
+.button:hover {
+    background-color: #302E45;
+}
+
 main {
     background-color: white;
 }
@@ -39,10 +109,10 @@ main p {
     color: var(--primary-dark);
     opacity: 0.8;
 }
-.mesa-verde {
-    width: 400px;
-    height: 300px;
+.img-responsive {
+    max-width: 100%;
     border-radius: 5px;
+    margin: 0 auto;
 }
 .grid-footer {
     display: grid;
@@ -52,7 +122,14 @@ main p {
 .grid-2-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
+.grid-3-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
 .recognition {
     text-align: center;
     color: white;
