@@ -8,14 +8,63 @@ body {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
-.grid {
+main {
+    background-color: white;
+}
+main h2 {
+    color: var(--primary-dark);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+main h3 {
+    color: var(--primary-dark);
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 0;
+    text-transform: uppercase;
+}
+main p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: var(--primary-dark);
+    opacity: 0.8;
+}
+.mesa-verde {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+.grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+}
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .recognition {
     text-align: center;
-    padding-top: 30px;
+    color: white;
+}
+.recognition a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.recognition a:hover {
+    text-decoration: underline;
 }
 footer {
     color: white;
@@ -23,7 +72,6 @@ footer {
         url('/images/footer.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -107,7 +155,7 @@ header a {
     margin-top: 20px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
     header {
         padding: 60px 0;
     }
@@ -127,7 +175,8 @@ header a {
         padding: 8px 16px;
     }
     footer {
-        margin: 30px 0px;
+        margin-top: 5px;
+        padding-top: 5px;
     }
     footer h3 {
         font-size: 10px;
@@ -139,7 +188,23 @@ header a {
         font-size: 8px;
     }
     .recognition {
-        font-size: 12px;
+        text-align: center;
+        font-size: 8px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    .mesa-verde {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    section {
+        padding: 30px 10px;
+    }
+    .responsive-center {
         text-align: center;
     }
 }
