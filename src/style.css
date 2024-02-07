@@ -273,6 +273,27 @@ section.tertiary h2 {
     text-align: center;
     margin: 0;
 }
+table {
+    border: 3px solid var(--primary-dark);
+    padding: 10px;
+    margin: 20px auto;
+    background-color: rgba(48, 46, 69, 0.7);
+}
+.table-container {
+    overflow-x: auto;
+}
+th {
+    text-align: left;
+    color: white;
+    padding-right: 10px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+td {
+    color: white;
+    font-size: 14px;
+    padding-right: 10px;
+}
 @media (max-width: 821px) {
     .embed {
         aspect-ratio: 16/9;
