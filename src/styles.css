@@ -34,7 +34,7 @@ section.secondary h3 {
 }
 section.secondary h4 {
     color: var(--primary-dark);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     text-align: left;
     line-height: 1;
@@ -47,6 +47,9 @@ section.secondary p {
     color: var(--primary-dark);
     opacity: 0.8;
     line-height: 1;
+}
+.justify {
+    text-align: justify;
 }
 .card {
     background-color: var(--secondary-light);
@@ -110,7 +113,7 @@ main p {
     opacity: 0.8;
 }
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -122,7 +125,16 @@ main p {
 .grid-2-columns {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+}
+.history {
+    grid-gap: 30px;
+}
+.card .grid .grid-2-columns {
+    grid-gap: 0;
+}
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 .grid-3-columns {
     display: grid;
@@ -232,7 +244,7 @@ header a {
     margin-top: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 821px) {
     header {
         padding: 60px 0;
     }
@@ -283,5 +295,11 @@ header a {
     }
     .responsive-center {
         text-align: center;
+    }
+    .img-responsive {
+        display: none;
+    }
+    .embed {
+        aspect-ratio: 16/9;
     }
 }
