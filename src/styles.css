@@ -3,6 +3,7 @@
     --primary-light: #faeed1;
     --secondary-light: #fff6f6;
     --tertiary-light: #ececec;
+    --hover: #302e45;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -81,7 +82,7 @@ section.secondary p {
     transition: all 150ms ease-in-out;
 }
 .button:hover {
-    background-color: #302e45;
+    background-color: var(--hover);
 }
 
 main {
@@ -253,6 +254,12 @@ header a {
     color: var(--primary-dark);
     display: inline-block;
     margin-top: 20px;
+    border-radius: 5px;
+    transition: all 150ms ease-in-out;
+}
+header a:hover {
+    background-color: var(--hover);
+    color: white;
 }
 
 section.tertiary {
