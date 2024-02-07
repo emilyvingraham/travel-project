@@ -159,6 +159,9 @@ header a:hover {
     background-color: var(--hover);
     color: white;
 }
+.header-buttons {
+    margin-bottom: 10px;
+}
 .history {
     grid-gap: 30px;
 }
@@ -273,6 +276,29 @@ section.tertiary h2 {
     text-align: center;
     margin: 0;
 }
+
+section.quaternary {
+    background-color: rgba(244, 238, 255, 0.95);
+}
+section.quaternary h3 {
+    color: var(--primary-dark);
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+section.quaternary h2 {
+    color: var(--primary-dark);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
 table {
     border: 3px solid var(--primary-dark);
     padding: 10px;
@@ -294,6 +320,35 @@ td {
     font-size: 14px;
     padding-right: 10px;
 }
+.video {
+    width: 70%;
+    height: 50%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    display: block;
+}
+.video-link {
+    display: block;
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    transition: all 150ms ease-in-out;
+    width: 30%;
+    display: block;
+    margin: 10px auto;
+}
+.video-link:hover {
+    background-color: var(--hover);
+}
+.video-text {
+    text-align: justify;
+}
+
 @media (max-width: 821px) {
     .embed {
         aspect-ratio: 16/9;
