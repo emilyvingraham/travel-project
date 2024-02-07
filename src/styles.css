@@ -1,7 +1,8 @@
 :root {
     --primary-dark: #03001c;
-    --primary-light: #FAEED1;
+    --primary-light: #faeed1;
     --secondary-light: #fff6f6;
+    --tertiary-light: #ececec;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -12,7 +13,7 @@ section {
     padding: 50px;
 }
 section.secondary {
-    background: var(--primary-light)
+    background: var(--primary-light);
 }
 section.secondary h2 {
     color: var(--primary-dark);
@@ -80,7 +81,7 @@ section.secondary p {
     transition: all 150ms ease-in-out;
 }
 .button:hover {
-    background-color: #302E45;
+    background-color: #302e45;
 }
 
 main {
@@ -242,6 +243,28 @@ header a {
     color: var(--primary-dark);
     display: inline-block;
     margin-top: 20px;
+}
+
+section.tertiary {
+    background-color: var(--tertiary-light);
+}
+section.tertiary h3 {
+    color: var(--primary-dark);
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+section.tertiary h2 {
+    color: var(--primary-dark);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
 }
 
 @media (max-width: 821px) {
