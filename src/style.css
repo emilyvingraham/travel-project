@@ -49,9 +49,7 @@ body {
     width: 100%;
     aspect-ratio: 1/1;
 }
-.filter-cards {
-    filter: grayscale(90%) contrast(1.5);
-}
+
 footer {
     color: white;
     background-image: linear-gradient(rgba(3, 0, 28, 0.8), rgba(3, 0, 28, 0.8)),
